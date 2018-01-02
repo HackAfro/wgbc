@@ -1,0 +1,39 @@
+{
+  "name": "wgbc",
+  "version": "1.0.0",
+  "description": "Website for word of grace bible church",
+  "main": "''",
+  "scripts": {
+    "start": "npm run build && python manage.py runserver",
+    "start-dev": "gulp",
+    "build": "gulp build",
+    "build:tailwind": "gulp tailwind",
+    "build:css": "gulp build-css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HackAfro/wgbc.git"
+  },
+  "author": "iamAfro <richyafro@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HackAfro/wgbc/issues"
+  },
+  "homepage": "https://github.com/HackAfro/wgbc#readme",
+  "devDependencies": {
+    "browser-sync": "^2.21.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-postcss": "*",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1"
+  },
+  "dependencies": {
+    "tailwindcss": "^0.4.0"
+  }
+}
