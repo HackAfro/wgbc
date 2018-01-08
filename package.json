@@ -4,8 +4,10 @@
   "description": "Website for word of grace bible church",
   "main": "''",
   "scripts": {
-    "start": "npm run build && python manage.py runserver",
-    "start-dev": "gulp",
+    "start:dev": "concurrently \"npm run watch\" \"npm run run:server\"",
+    "start": "concurrently \"npm run build\" \"npm run run:server\"",
+    "watch": "gulp",
+    "run:server": "python manage.py runserver",
     "build": "gulp build",
     "build:tailwind": "gulp tailwind",
     "build:css": "gulp build-css",
@@ -23,6 +25,7 @@
   "homepage": "https://github.com/HackAfro/wgbc#readme",
   "devDependencies": {
     "browser-sync": "^2.21.0",
+    "concurrently": "^3.5.1",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-concat": "^2.6.1",
