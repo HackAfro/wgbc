@@ -51,5 +51,6 @@ gulp.task('tailwind',
 gulp.task('watch', () => {
   gulp.watch('static/css/**/*.scss', ['reload-css']);
   gulp.watch('templates/**/*.html', () => server.reload());
+  gulp.watch('static/js/**/*.js', () => server.reload());
   gulp.watch(['./config.css', './tailwind.js'], ['reload-tailwind']);
 });

@@ -1,6 +1,8 @@
-from django.conf.urls import url
-from .views import index
+from django.urls import path
+from .views import index, about_us, contact
 
 urlpatterns = [
-    url(r'$', index, name="index"),
+    path('', index),
+    path('about-us/', about_us),
+    path('contact/',  contact),
 ]

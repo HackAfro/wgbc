@@ -1,0 +1,62 @@
+{% extends 'layout.html' %}
+
+{% block links %}
+    <link rel="stylesheet" href="/static/css/dist/contact.css">
+{% endblock links %}
+
+{% block content %}
+    <section class="contact-map">
+        <div id="map"></div>
+    </section>
+    <section class="contact-section my-8">
+        <div class="flex flex-wrap mx-auto mb-8 w-full lg:w-3/4">
+            <div class="w-full md:w-1/2 lg:w-1/2 px-6">
+                <h2 class="uppercase font-extrabold tracking-wide my-2 text-sm mb-8 lg:text-md">Contact Us</h2>
+                <div class="contact-zone px-8">
+                    <p class="text-sm opacity-75 mb-3"><i class="fa fa-map-marker mr-3"></i> No. 80 Afaha Eket Road, <br/>
+                        Eket, Akwa Ibom State.</p>
+                    <hr/>
+                    <p class="text-sm opacity-75 mb-3"><i class="fa fa-envelope mr-3"></i> info@meadowfoods.com.ng</p>
+                    <hr/>
+                    <p class="text-sm opacity-75 mb-3"><i class="fa fa-phone mr-3"></i> 0801 234 6779</p>
+                    <hr/>
+                    <p class="text-sm opacity-75 mb-3"><i class="fa fa-twitter mr-3"></i> @MeadowFoodsNg</p>
+                    <hr/>
+                    <p class="text-sm opacity-75"><i class="fa fa-facebook mr-3"></i> @MeadowFoodsNig</p>
+                </div>
+            </div>
+            <form class="px-8 w-full mt-8 pt-8 md:w-1/2 lg:w-1/2 lg:mt-0 lg:pt-0" id="contact-form">
+                <div class="alert hidden mx-auto bg-black py-3 px-6 text-xs font-bold text-white rounded relative my-3 w-3/4">
+                    <p class="inline message"></p><i
+                        class="fa fa-close absolute cursor-pointer inline text-white ml-4 close-alert"> </i>
+                </div>
+                <div class="flex mb-8">
+                    <div class="w-full lg:w-1/2">
+                        <input class="px-4 py-3 shadow rounded text-xs w-full border-2" type="text"
+                               placeholder="Your Name" id="name"/>
+                    </div>
+                    <div class="w-full pl-4 lg:w-1/2">
+                        <input class="px-4 py-3 shadow rounded text-xs w-full border-2" type="email"
+                               placeholder="Your Email" id="email"/>
+                    </div>
+                </div>
+                <div class="w-full">
+                    <textarea class="px-4 py-3 shadow text-xs w-full border-2 rounded" placeholder="Your Message"
+                              rows="6" id="message"></textarea>
+                </div>
+                <div>
+                    <button class="rounded bg-wgbc text-white px-8 py-3 font-extrabold text-xs uppercase my-4 text-center"
+                            type="submit">submit
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+{% endblock content %}
+
+{% block scripts %}
+    <script src="/static/js/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvFH-0VEKeDJ9zmS5fUhwWk6dapU9kEqk&callback=initMap"
+            async
+            defer></script>
+{% endblock scripts %}

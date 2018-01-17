@@ -14,3 +14,21 @@ body {
 .arrow {
   height: 10px;
 }
+
+.active {
+  color: #219653;
+}
+
+input:focus, button:focus{
+  outline: none;
+}
+
+button:focus{
+  transform: scale(1.03);
+}
+
+footer {
+  .tag {
+    border-radius: 20px;
+  }
+}

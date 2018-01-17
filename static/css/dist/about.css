@@ -1,0 +1,21 @@
+.hero-section {
+  background: url("/static/imgs/bible-page.png");
+  height: 550px; }
+  .hero-section .slideshow-img {
+    width: 500px; }
+  .hero-section .down-button {
+    left: 50%;
+    bottom: -30px; }
+
+.line-separator {
+  width: 60px;
+  height: 3px; }
+
+.mission-vision .vision-area {
+  background: #F5F5F5; }
+
+.leader-img {
+  width: 60%; }
+
+.slide-trigger {
+  width: 30px; }

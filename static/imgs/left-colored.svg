@@ -1,0 +1,18 @@
+<svg width="52" height="52" viewBox="0 0 52 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>left</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-205 -2819)">
+<g id="left" opacity="0.304801">
+<g id="Combined Shape">
+<use xlink:href="#path0_fill" transform="matrix(-1 0 0 1 242 2835)" fill="#219653"/>
+</g>
+<g id="Oval 3">
+<use xlink:href="#path1_stroke" transform="matrix(-1 0 0 1 256 2820)" fill="#219653"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 20.3848 8.48535L 11.8995 0L 10.4853 1.41406L 18.0711 9L 0 9L 0 11L 17.8701 11L 10.4853 18.3848L 11.8995 19.7991L 20.3848 11.3137L 21.799 9.89941L 20.3848 8.48535Z"/>
+<path id="path1_stroke" d="M 25 51C 39.3594 51 51 39.3594 51 25L 49 25C 49 38.2548 38.2548 49 25 49L 25 51ZM 51 25C 51 10.6406 39.3594 -1 25 -1L 25 1C 38.2548 1 49 11.7452 49 25L 51 25ZM 25 -1C 10.6406 -1 -1 10.6406 -1 25L 1 25C 1 11.7452 11.7452 1 25 1L 25 -1ZM -1 25C -1 39.3594 10.6406 51 25 51L 25 49C 11.7452 49 1 38.2548 1 25L -1 25Z"/>
+</defs>
+</svg>
