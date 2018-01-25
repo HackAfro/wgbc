@@ -6,9 +6,11 @@
   "scripts": {
     "start:dev": "concurrently \"npm run watch\" \"npm run run:server\"",
     "start": "concurrently \"npm run build\" \"npm run run:server\"",
-    "watch": "gulp",
+    "watch": "concurrently \"gulp\" \"npm run parcel:watch\"",
     "run:server": "python manage.py runserver",
-    "build": "gulp build",
+    "build": "concurrently \"gulp build\" \" npm run parcel:build\"",
+    "parcel:build": "parcel build ./static/js/build/site.js -d ./static/js/dist",
+    "parcel:watch": "parcel watch ./static/js/build/site.js -d ./static/js/dist" ,
     "build:tailwind": "gulp tailwind",
     "build:css": "gulp build-css",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -24,17 +26,21 @@
   },
   "homepage": "https://github.com/HackAfro/wgbc#readme",
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
     "browser-sync": "^2.21.0",
     "concurrently": "^3.5.1",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
+    "gulp-babel": "^7.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-cssnano": "^2.1.2",
     "gulp-load-plugins": "^1.5.0",
     "gulp-postcss": "*",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
-    "gulp-sourcemaps": "^2.6.1"
+    "gulp-sourcemaps": "^1.12.1",
+    "jump.js": "^1.0.2"
   },
   "dependencies": {
     "tailwindcss": "^0.4.0"

@@ -1,0 +1,31 @@
+.hero-section {
+  background: url('/static/imgs/bible-page.png');
+  height: 550px;
+
+  .tabs {
+    position: absolute;
+    bottom: -14px;
+  }
+}
+
+.event-section {
+  background: url('/static/imgs/texture.png');
+  .img-bg {
+    position: absolute;
+  }
+  .event-img {
+    z-index: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .tabs {
+    left: 10%;
+  }
+}
+
+@media (min-width: 992px) {
+  .tabs {
+    left: 12.5%;
+  }
+}

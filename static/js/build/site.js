@@ -1,8 +1,13 @@
 /**
  * Created by Afro on 1/17/2018.
  */
+// import jump from 'jump.js';
+
 (function () {
     'use strict';
+
+    const navItems = [...document.querySelectorAll('.nav-item')]; // Get all the nav items
+    
 
     // Get the href string without the forward slashes
     const stripSlashes = href => {
@@ -14,17 +19,12 @@
     try {
         const href = window.location.pathname; // Get the current relative url of the page;
         const pathStr = stripSlashes(href);
-
-        const navItems = [...document.querySelectorAll('.nav-item')]; // Get all the nav items
-        navItems.forEach(item => {
-            if (item.attributes.href === undefined) return; // If element has no href attribute,return
-
-            if (stripSlashes(item.attributes.href.value) === pathStr) { // Iterate through navItems list and find navItem who's text matches pathStr
-                item.classList.add('active'); // if elements href value matches path string, add the active class to it
-            }
-        })
-
+        const activeItem = navItems.find(item => stripSlashes(item.attributes.href.value) === pathStr); // Iterate through navItems list and find navItem who's text matches pathStr
+        activeItem.classList.add('active');  // if the element's href value matches path string, add the active class to it
+        
     } catch (err) {
         console.log(err)
     }
+
+
 })();
