@@ -1,121 +1,111 @@
-{% extends "layout.html" %}
+{% extends "layout.html" %} {% block links %}
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
+<link rel="stylesheet" href="static/css/dist/index.css"> {% endblock links %} {% block content %}
+<section class="hero-section relative">
+    <div class="flex flex-wrap">
+        <div class="w-full h-full flex flex-col text-white justify-center py-14 px-14 lg:w-1/2">
+            <h1 class="lato font-extabold text-4xl mt-8">
+                Worship With us every week, with joy
+            </h1>
+            <p class="my-8">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est laboriosam omnis temporibus, tempore enim dolor quisquam nihil,
+                exercitationem rem provident error dolore earum, ut tempora voluptates facere fugit minima autem?
+            </p>
 
-{% block links %}
-    <link rel="stylesheet" href="static/css/dist/index.css">
-{% endblock links %}
-
-{% block content %}
-    <section class="hero-section relative">
-        <div class="flex flex-wrap">
-            <div class="w-full h-full flex flex-col text-white justify-center py-14 px-14 lg:w-1/2">
-                <h1 class="lato font-extabold text-4xl mt-8">
-                    Worship With us every week, with joy
-                </h1>
-                <p class="my-8">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est laboriosam omnis temporibus, tempore
-                    enim
-                    dolor quisquam nihil,
-                    exercitationem rem provident error dolore earum, ut tempora voluptates facere fugit minima autem?
-                </p>
-
-                <div class="">
-                    <a href="" class="bg-white text-xs text-wgbc py-3 no-underline shadow-lg rounded-100 px-6">
-                        View our weekly services
-                        <img src="static/imgs/arrow.svg" alt="" class="ml-6 align-middle arrow">
-                    </a>
-                </div>
-            </div>
-            <div class="w-full h-full pt-14 lg:w-1/2 text-center">
-                <img src="static/imgs/worship.png" alt="" class="slideshow-img">
-                <div class="my-6 flex justify-center">
-                    <div class="cursor-pointer">
-                        <img src="static/imgs/left.svg" alt="" class="mr-4 slide-trigger">
-                    </div>
-                    <div class="cursor-pointer">
-                        <img src="static/imgs/right.svg" alt="" class="slide-trigger">
-                    </div>
-                </div>
+            <div class="">
+                <a href="" class="bg-white text-xs text-wgbc py-3 no-underline shadow-lg rounded-100 px-6">
+                    View our weekly services
+                    <img src="static/imgs/arrow.svg" alt="" class="ml-6 align-middle arrow">
+                </a>
             </div>
         </div>
-        <button class="rounded-full text-black text-center px-4 py-4 bg-white font-extrabold shadow-md absolute down-button">
+        <div class="w-full h-full pt-14 lg:w-1/2 text-center">
+            <div class="carousel">
+                <div class="image">
+                    <img data-lazy="static/imgs/worship.png" alt="" class="slideshow-img">
+                </div>
+                <div class="image">
+                    <img data-lazy="static/imgs/texture.png" alt="" class="slideshow-img">
+                </div>
+                <div class="image">
+                    <img data-lazy="static/imgs/steve.jpg" alt="" class="slideshow-img">
+                </div>
+            </div>
+            <div class="my-6 flex justify-center slide-button-container">
+
+            </div>
+        </div>
+    </div>
+    <div class="w-full flex justify-center text-center mt-6">
+        <button class="rounded-full text-black text-center px-4 py-4 bg-white font-extrabold shadow-md absolute js-down-button" data-target=".about-section"
+            data-offset="-30">
             <i class="fa fa-arrow-down align-middle text-2xl"></i>
         </button>
-    </section>
+    </div>
+</section>
 
-    <section class="about-section mt-14">
-        <div class="flex flex-wrap w-full mx-auto lg:w-4/5">
-            <div class="w-full lg:w-1/2">
-                <div class="about-img bg-grey shadow-lg mx-auto">
+<section class="about-section mt-14">
+    <div class="flex flex-wrap w-full mx-auto lg:w-4/5">
+        <div class="w-full lg:w-1/2">
+            <div class="about-img bg-grey shadow-lg mx-auto">
 
-                </div>
-            </div>
-            <div class="w-full px-10 text-center lg:w-1/2">
-                <h3 class="text-wgbc text-center mb-4">About WGBC</h2>
-
-                    <p class="text-sm opacity-75">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque dolor
-                        cupiditate similique, doloremque quam
-                        ullam mollitia ad, nemo animi qui explicabo accusamus vel non rem cum exercitationem facilis
-                        hic!
-                        Dolorem.</p>
-                    <br>
-                    <p class="text-sm opacity-75">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi
-                        laudantium repellat at optio distinctio,
-                        rerum, consequatur, vero fuga itaque veniam eius recusandae voluptatibus doloremque sunt quidem
-                        id
-                        omnis
-                        delectus ipsam.
-                    </p>
-                    <button class="px-4 py-2 text-wgbc text-xs rounded-100 mt-6 bg-white shadow-md">
-                        About us
-                        <img src="static/imgs/arrow.svg" alt="" class="ml-6 align-middle arrow">
-                    </button>
             </div>
         </div>
-    </section>
+        <div class="w-full px-10 text-center lg:w-1/2">
+            <h3 class="text-wgbc text-center mb-4">About WGBC</h2>
 
-    <section class="mt-14 py-8 leaders-section">
-        <h2 class="uppercase text-center font-bold tracking-normal my-4">our leaders</h2>
-        <p class="text-center">Our spiritual leaders. Those appointed to keep things running</p>
-
-        <div class="flex flex-wrap w-full lg:w-3/4 lg:mx-auto">
-            <div class="w-full mt-6 lg:w-1/3 flex flex-col items-center">
-                <!-- <img src="" alt="" class="my-3"> -->
-                <div class="w-48 h-48 bg-grey mb-3"></div>
-                <h4 class="text-center mb-1">Pastor George Umana</h4>
-                <p class="text-center">Lead pastor and founder</p>
-            </div>
-            <div class="w-full mt-6 lg:w-1/3 flex flex-col items-center">
-                <!-- <img src="" alt="" class="my-3"> -->
-                <div class="w-48 h-48 bg-grey mb-3"></div>
-                <h4 class="text-center mb-1">Pastor Tade Umana</h4>
-                <p class="text-center">Associate Pastor</p>
-            </div>
-            <div class="w-full mt-6 lg:w-1/3 flex flex-col items-center">
-                <!-- <img src="" alt="" class="my-3"> -->
-                <div class="w-48 h-48 bg-grey mb-3"></div>
-                <h4 class="text-center mb-1">Pastor Helen Umana</h4>
-                <p class="text-center">Associate Pastor</p>
-            </div>
+                <p class="text-sm opacity-75">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque dolor cupiditate similique, doloremque quams
+                    ullam mollitia ad, nemo animi qui explicabo accusamus vel non rem cum exercitationem facilis hic! Dolorem.
+                </p>
+                <br>
+                <p class="text-sm opacity-75 mb-6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi laudantium repellat at optio distinctio,
+                    rerum, consequatur, vero fuga itaque veniam eius recusandae voluptatibus doloremque sunt quidem id omnis
+                    delectus ipsam.
+                </p>
+                <a class="px-4 py-2 text-wgbc text-xs rounded-100 mt-6 bg-white shadow-md no-underline" href="/about-us">
+                    About us
+                    <img src="static/imgs/arrow.svg" alt="" class="ml-6 align-middle arrow">
+                </a>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="mt-14 fellowships-section relative">
-        <div class="mx-auto flex justify-center slide-trigger-holder">
-            <div class="cursor-pointer">
-                <img src="/static/imgs/left-colored.svg" alt="" class="slide-trigger mr-4">
-            </div>
-            <div class="cursor-pointer">
-                <img src="/static/imgs/right-colored.svg" alt="" class="slide-trigger">
-            </div>
-        </div>
-        <div class="w-full mt-4 text-center flex flex-col items-center  lg:w-3/4 lg:mx-auto">
-            <img src="/static/imgs/pexels-photo-159935.png" alt="" class="slide-img">
-            <button class="px-4 py-3 text-wgbc text-xs rounded-100 mt-6 bg-white shadow-md">
-                View all our fellowships
-                <img src="static/imgs/arrow.svg" alt="" class="ml-6 align-middle arrow">
-            </button>
-        </div>
+<section class="mt-14 py-8 leaders-section">
+    <h2 class="uppercase text-center font-bold tracking-normal my-4">our leaders</h2>
+    <p class="text-center">Our spiritual leaders. Those appointed to keep things running</p>
 
+    <div class="flex flex-wrap w-full lg:w-3/4 lg:mx-auto">
+        <div class="w-full mt-6 lg:w-1/3 flex flex-col items-center">
+            <!-- <img src="" alt="" class="my-3"> -->
+            <div class="w-48 h-48 bg-grey mb-3"></div>
+            <h4 class="text-center mb-1">Pastor George Umana</h4>
+            <p class="text-center">Lead pastor and founder</p>
+        </div>
+        <div class="w-full mt-6 lg:w-1/3 flex flex-col items-center">
+            <!-- <img src="" alt="" class="my-3"> -->
+            <div class="w-48 h-48 bg-grey mb-3"></div>
+            <h4 class="text-center mb-1">Pastor Tade Umana</h4>
+            <p class="text-center">Associate Pastor</p>
+        </div>
+        <div class="w-full mt-6 lg:w-1/3 flex flex-col items-center">
+            <!-- <img src="" alt="" class="my-3"> -->
+            <div class="w-48 h-48 bg-grey mb-3"></div>
+            <h4 class="text-center mb-1">Pastor Helen Umana</h4>
+            <p class="text-center">Associate Pastor</p>
+        </div>
+    </div>
+</section>
+
+<section class="mt-14 fellowships-section relative">
+    <div class="mx-auto flex justify-center slide-trigger-holder">
+        <div class="cursor-pointer">
+            <img src="/static/imgs/left-colored.svg" alt="" class="slide-trigger mr-4">
+        </div>
+        <div class="cursor-pointer">
+            <img src="/static/imgs/right-colored.svg" alt="" class="slide-trigger">
+        </div>
+    </div>
+    <div class="w-full mt-4 text-center flex flex-col items-center  lg:w-3/4 lg:mx-auto">
         <section class="fellowship-details bg-wgbc text-white py-6 px-4 absolute">
             <i class="fa fa-quote-right mb-4"></i>
             <p class="mb-4 opacity-75">
@@ -129,40 +119,42 @@
             </p>
             <p class="uppercase">Women of grace</p>
         </section>
+        <img src="/static/imgs/pexels-photo-159935.png" alt="" class="slide-img mb-6">
+        <a class="px-4 py-3 text-wgbc text-xs rounded-100 mt-6 bg-white shadow-md no-underline" href="/ministries">
+            View all our fellowships
+            <img src="static/imgs/arrow.svg" alt="" class="ml-6 align-middle arrow">
+        </a>
+    </div>
 
-    </section>
+</section>
 
-    <section class="contact-section mt-14">
-        <div class="flex flex-wrap pt-8">
-            <div class="w-full bg-wgbc px-10 py-6 lg:w-1/2">
-                <h3 class="uppercase text-white text-center">Leave us a message</h3>
-                <p class="opacity-75 text-xs text-center text-white">We'll surely respond</p>
-                <form action="" class="w-3/4 text-center mt-4 mx-auto">
-                    <div class="mb-4">
-                        <input type="text"
-                               class="w-full border-2 border-wgbc rounded py-2 px-4 bg-white shadow focus:border-wgbc"
-                               placeholder="Your Email">
-                    </div>
-                    <div>
-                    <textarea placeholder="Your message" name="" id="" cols="30" rows="10"
-                              class="rounded py-2 px-4 border-2 border-wgbc w-full bg-white shadow focus:border-wgbc"></textarea>
-                    </div>
-                    <button class="px-4 py-3 text-wgbc text-xs rounded-100 mt-4 bg-white shadow-md">
-                        Send Message
-                        <img src="static/imgs/arrow.svg" alt="" class="ml-6 align-middle arrow">
-                    </button>
-                </form>
-            </div>
-            <div class="w-full lg:w-1/2" id="map">
-
-            </div>
+<section class="contact-section mt-14">
+    <div class="flex flex-wrap pt-8">
+        <div class="w-full bg-wgbc px-10 py-6 lg:w-1/2">
+            <h3 class="uppercase text-white text-center">Leave us a message</h3>
+            <p class="opacity-75 text-xs text-center text-white">We'll surely respond</p>
+            <form action="" class="w-3/4 text-center mt-4 mx-auto">
+                <div class="mb-4">
+                    <input type="text" class="w-full border-2 border-wgbc rounded py-2 px-4 bg-white shadow focus:border-wgbc" placeholder="Your Email">
+                </div>
+                <div>
+                    <textarea placeholder="Your message" name="" id="" cols="30" rows="10" class="rounded py-2 px-4 border-2 border-wgbc w-full bg-white shadow focus:border-wgbc"></textarea>
+                </div>
+                <button class="px-4 py-3 text-wgbc text-xs rounded-100 mt-4 bg-white shadow-md">
+                    Send Message
+                    <img src="static/imgs/arrow.svg" alt="" class="ml-6 align-middle arrow">
+                </button>
+            </form>
         </div>
-    </section>
-{% endblock content %}
+        <div class="w-full lg:w-1/2" id="map">
 
-{% block scripts %}
-    <script src="/static/js/dist/map.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvFH-0VEKeDJ9zmS5fUhwWk6dapU9kEqk&callback=initMap"
-            async
-            defer></script>
-{% endblock scripts %}
+        </div>
+    </div>
+</section>
+{% endblock content %} {% block scripts %}
+<script src="/static/js/dist/map.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvFH-0VEKeDJ9zmS5fUhwWk6dapU9kEqk&callback=initMap" async
+    defer></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+<script src="/static/js/dist/slide.js" async defer></script> {% endblock scripts %}

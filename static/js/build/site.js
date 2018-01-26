@@ -1,13 +1,27 @@
 /**
  * Created by Afro on 1/17/2018.
  */
-// import jump from 'jump.js';
+import jump from 'jump.js';
 
 (function () {
     'use strict';
 
     const navItems = [...document.querySelectorAll('.nav-item')]; // Get all the nav items
+    const downButton = [... document.querySelectorAll('.js-down-button')];
+
     
+    const smoothScroll = (e) => {
+        const el = e.target;
+        const scrollTarget = el.dataset.target;
+        const offset = parseInt(el.dataset.offset);
+        jump(scrollTarget, {
+            duration: 1000,
+            offset
+        })
+    }
+    
+    downButton.forEach(button => button.addEventListener('click', smoothScroll))
+
 
     // Get the href string without the forward slashes
     const stripSlashes = href => {

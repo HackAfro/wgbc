@@ -2,13 +2,18 @@
   background: url("/static/imgs/bible-page.png");
   height: 550px; }
   .hero-section .slideshow-img {
-    width: 500px; }
-  .hero-section .down-button {
+    width: 500px;
+    height: 310px; }
+  .hero-section .js-down-button {
     left: 50%;
     bottom: -30px; }
 
 .about-section .about-img {
   height: 14.5rem; }
+
+.slick-initialized .slick-slide {
+  display: flex;
+  justify-content: center; }
 
 .leaders-section {
   background: url("/static/imgs/texture.png"); }

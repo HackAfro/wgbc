@@ -3,3 +3,4 @@ node_modules/
 solution.js
 yarn.lock
 _*
+dist/

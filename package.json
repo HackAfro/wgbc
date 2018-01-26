@@ -5,7 +5,7 @@
   "main": "''",
   "scripts": {
     "start:dev": "concurrently \"npm run watch\" \"npm run run:server\"",
-    "start": "concurrently \"npm run build\" \"npm run run:server\"",
+    "start": "npm run build && npm run run:server",
     "watch": "concurrently \"gulp\" \"npm run parcel:watch\"",
     "run:server": "python manage.py runserver",
     "build": "concurrently \"gulp build\" \" npm run parcel:build\"",
@@ -40,7 +40,8 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^1.12.1",
-    "jump.js": "^1.0.2"
+    "jump.js": "^1.0.2",
+    "parcel-bundler": "1.4.1"
   },
   "dependencies": {
     "tailwindcss": "^0.4.0"

@@ -14,7 +14,7 @@ const paths = {
     dest: 'static/css/dist/'
   },
   js: {
-    src: 'static/js/build/*.js',
+    src: 'static/js/build/gulp/*.js',
     dest: 'static/js/dist/'
   }
 };
