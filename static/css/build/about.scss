@@ -1,9 +1,7 @@
 .hero-section {
   background: url('/static/imgs/bible-page.png');
-  height: 550px;
-  .slideshow-img {
-    width: 500px;
-  }
+  height: 400px;
+
   .down-button {
     left: 50%;
     bottom: -30px;
@@ -26,4 +24,10 @@
 }
 .slide-trigger {
     width: 30px;
+}
+
+@media (min-width: 992px) {
+  .hero-section{
+    height: 550px;
+  }
 }

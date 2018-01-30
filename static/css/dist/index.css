@@ -29,4 +29,9 @@
 
 .fellowships-section .fellowship-details {
   top: -10%;
-  left: 22%; }
+  left: 5%; }
+
+@media (min-width: 992px) {
+  .fellowship-details {
+    top: -10%;
+    left: 22%; } }

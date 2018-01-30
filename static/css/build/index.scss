@@ -1,45 +1,51 @@
 .hero-section {
-    background: url('/static/imgs/bible-page.png');
-    height: 550px;
-    .slideshow-img {
-        width: 500px;
-        height: 310px;
-    }
-    .js-down-button {
-        left: 50%;
-        bottom: -30px;
-    }
+  background: url('/static/imgs/bible-page.png');
+  height: 550px;
+  .slideshow-img {
+    width: 500px;
+    height: 310px;
+  }
+  .js-down-button {
+    left: 50%;
+    bottom: -30px;
+  }
 }
 
 .about-section {
-    .about-img {
-        height: 14.5rem;
-    }
+  .about-img {
+    height: 14.5rem;
+  }
 }
 
 .slick-initialized .slick-slide {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-
 .leaders-section {
-    background: url('/static/imgs/texture.png')
+  background: url('/static/imgs/texture.png');
 }
 
 .slide-trigger {
-    width: 40px;
+  width: 40px;
 }
 
 .fellowships-section {
-    .slide-trigger-holder {
-        width: auto;
-    }
-    .slide-img {
-        width: 500px;
-    }
-    .fellowship-details {
-        top: -10%;
-        left: 22%;
-    }
+  .slide-trigger-holder {
+    width: auto;
+  }
+  .slide-img {
+    width: 500px;
+  }
+  .fellowship-details {
+    top: -10%;
+    left: 5%;
+  }
+}
+
+@media (min-width: 992px) {
+  .fellowship-details {
+    top: -10%;
+    left: 22%;
+  }
 }
