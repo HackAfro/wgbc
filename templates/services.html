@@ -1,0 +1,224 @@
+{% extends 'layout.html' %} {% block links %}
+<link rel="stylesheet" href="/static/css/dist/ministries.css"> {% endblock links %} {% block content %}
+<section class="hero-section relative">
+    <div class="flex flex-wrap">
+        <div class="w-full h-full flex flex-col text-white justify-center text-center py-10 px-6 md:py-12 md:px-8 lg:py-14 lg:px-10 lg:mx-auto lg:w-3/4">
+            <h1 class="lato font-extabold mt-6 text-3xl uppercase text-center lg:text-4xl">
+                Our Services
+            </h1>
+            <p class="my-8">
+                Our services center on Maritime Civil Construction, Foundation works and Engineering Procurement.
+            </p>
+
+            <div class="mt-3">
+                <a href="" class="bg-white text-xs text-wgbc py-3 no-underline shadow-lg rounded-100 px-6">
+                    View all our services
+                    <img src="https://res.cloudinary.com/hackafro/image/upload/v1526810309/arrow_mhm47y.svg" alt="" class="ml-6 align-middle arrow">
+                </a>
+            </div>
+        </div>
+        <div class="w-full flex justify-center text-center mt-6">
+            <button class="rounded-full text-black text-center px-4 py-4 bg-white font-extrabold shadow-md absolute js-down-button" data-target=".tabs"
+                data-offset="-30">
+                <i class="fa fa-arrow-down align-middle text-2xl"></i>
+            </button>
+        </div>
+    </div>
+    <div class="hidden bg-white shadow-md flex tabs rounded mx-auto md:w-4/5 lg:w-3/4">
+        <div class="tab w-1/5 px-2 py-6 text-center cursor-pointer rounded-l tab-active" data-target="maritime">
+            <h5 class="uppercase text-xs tracking-wide lg:text-sm">Maritime Construction</h5>
+        </div>
+        <div class="tab w-1/5 px-2 py-6 text-center cursor-pointer" data-target="harbour">
+            <h5 class="uppercase text-xs tracking-wide lg:text-sm">Harbour  work</h5>
+        </div>
+        <div class="tab w-1/5 px-2 py-6 text-center cursor-pointer" data-target="diving">
+            <h5 class="uppercase text-xs tracking-wide lg:text-sm">Underwater works</h5>
+        </div>
+        <div class="tab w-1/5 px-2 py-6 text-center cursor-pointer" data-target="fabrication">
+            <h5 class="uppercase text-xs tracking-wide lg:text-sm">Fabrication Services</h5>
+        </div>
+        <div class="tab w-1/5 px-2 py-6 text-center cursor-pointer rounded-r" data-target="piling">
+            <h5 class="uppercase text-xs tracking-wide lg:text-sm">Foundation Works</h5>
+        </div>
+    </div>
+</section>
+
+<section class="ministry-overview mt-10 mb-10">
+    <div class="flex flex-wrap tab-body body-active" data-tab="maritime">
+        <div class="w-full py-3 mb-8 md:w-1/2 md:mb-0 lg:w-1/2 lg:mb-0">
+            <div class="bg-grey w-3/4 mx-auto h-48 lg:h-64">
+                <img src="https://res.cloudinary.com/hackafro/image/upload/v1526809770/service-5_xotzdb.jpg" alt="" style="max-width: 100%; max-height: 100%; width: 100%; height: 100%">
+            </div>
+            <div class="mx-auto text-center px-8 mt-6 lg:px-10 lg:w-3/4">
+                <hr class="line-separator border-b-2 border-wgbc">
+                <h2 class="opacity-75 capitalize tracking-wide leading-normal">
+                    Maritime Civil Construction
+                </h2>
+            </div>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/2">
+            <div class="w-full mx-auto lg:w-3/4">
+                <div class="text-center">
+                    <hr class="line-separator border-b-2 border-wgbc mb-4">
+                    <h3 class="text-wgbc uppercase font-semibold">Service Overview</h3>
+                </div>
+
+                <div class="flex justify-center px-6 py-4 lg:px-6">
+                    <ul class="service-list">
+                        <li>Jetties</li>
+                        <li>Concrete sheet piles and shore wall</li>
+                        <li>Slipways</li>
+                        <li>Shore protection works</li>
+                        <li>Sand filling/Reclamation</li>
+                        <li>Concrete channels/Drainage works</li>
+                        <li>Maintenance Dredging</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex flex-wrap tab-body" data-tab="harbour">
+        <div class="w-full py-3 mb-8 md:w-1/2 md:mb-0 lg:w-1/2 lg:mb-0">
+            <div class="bg-grey w-3/4 mx-auto h-48 lg:h-64">
+                <img src="https://res.cloudinary.com/hackafro/image/upload/v1526809640/service-4_tbtmti.jpg" alt="" style="max-width: 100%; max-height: 100%; width: 100%; height: 100%">
+            </div>
+            <div class="mx-auto text-center px-8 mt-6 lg:px-10 lg:w-3/4">
+                <hr class="line-separator border-b-2 border-wgbc">
+                <h2 class="opacity-75 capitalize tracking-wide leading-normal">
+                    Harbour maintenance work
+                </h2>
+            </div>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/2">
+            <div class="w-full mx-auto lg:w-3/4">
+                <div class="text-center">
+                    <hr class="line-separator border-b-2 border-wgbc mb-4">
+                    <h3 class="text-wgbc uppercase font-semibold">Service Overview</h3>
+                </div>
+
+                <div class="flex justify-center px-6 py-4 lg:px-6">
+                    <ul class="service-list">
+                        <li>Refurbishment of Port shades and warehouses</li>
+                        <li>Installation of fenders</li>
+                        <li>Refurbishment of ageing Jetties</li>
+                        <li>Refurbishment of steel sheet pile walls</li>
+                        <li>Reconstruction of capping beams</li>
+                        <li>Reconstruction of Quay aprons</li>
+                        <li>Refurbishment of support piles</li>
+                        <li>Installation of Anodes/Cathodic protection</li>
+                        <li>Corrosion protection works</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex flex-wrap tab-body" data-tab="diving">
+        <div class="w-full py-3 mb-8 md:w-1/2 md:mb-0 lg:w-1/2 lg:mb-0">
+            <div class="bg-grey w-3/4 mx-auto h-48 lg:h-64">
+                <img src="https://res.cloudinary.com/hackafro/image/upload/v1526809639/service-3_ovwle6.jpg" alt="" style="max-width: 100%; max-height: 100%; width: 100%; height: 100%">
+            </div>
+            <div class="mx-auto text-center px-8 mt-6 lg:px-10 lg:w-3/4">
+                <hr class="line-separator border-b-2 border-wgbc">
+                <h2 class="opacity-75 capitalize tracking-wide leading-normal">
+                    Diving and underwater works
+                </h2>
+            </div>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/2">
+            <div class="w-full mx-auto lg:w-3/4">
+                <div class="text-center">
+                    <hr class="line-separator border-b-2 border-wgbc mb-4">
+                    <h3 class="text-wgbc uppercase font-semibold">Service Overview</h3>
+                </div>
+
+                <div class="flex justify-center px-6 py-4 lg:px-6">
+                    <p class="opacity-75 leading-normal tracking-wide">
+                        <ul class="service-list">
+                            <li>Underwater inspection services</li>
+                            <li>Underwater photography</li>
+                            <li>Underwater video coverage</li>
+                            <li>Underwater welding</li>
+                            <li>Underwater burning</li>
+                            <li>Underwater cleaning</li>
+                            <li>Underwater coating</li>
+                            <li>Underwater concreting</li>
+                            <li>De-silting</li>
+                            <li>General diving services</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-wrap tab-body" data-tab="fabrication">
+        <div class="w-full py-3 mb-8 md:w-1/2 md:mb-0 lg:w-1/2 lg:mb-0">
+            <div class="bg-grey w-3/4 mx-auto h-48 lg:h-64">
+                <img src="https://res.cloudinary.com/hackafro/image/upload/v1526809639/service-2_zkyta3.jpg" alt="" style="max-width: 100%; max-height: 100%; width: 100%; height: 100%">        
+            </div>
+            <div class="mx-auto text-center px-8 mt-6 lg:px-10 lg:w-3/4">
+                <hr class="line-separator border-b-2 border-wgbc">
+                <h2 class="opacity-75 capitalize tracking-wide leading-normal">
+                    Fabrication Services
+                </h2>
+            </div>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/2">
+            <div class="w-full mx-auto lg:w-3/4">
+                <div class="text-center">
+                    <hr class="line-separator border-b-2 border-wgbc mb-4">
+                    <h3 class="text-wgbc uppercase font-semibold">Service Overview</h3>
+                </div>
+
+                <div class="flex justify-center px-6 py-4 lg:px-6">
+                    <ul class="service-list">
+                        <li>Structural steel works</li>
+                        <li>Vertical Storage tanks (Tank farm tanks)</li>
+                        <li>Pontoons</li>
+                        <li>Barges</li>
+                        <li>Steel buoys</li>
+                        <li>Steel forms</li>
+                        <li>Overhead tank stands</li>
+                        <li>Masts</li>
+                        <li>Floating booms (oil and weed barriers)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-wrap tab-body" data-tab="piling">
+        <div class="w-full py-3 mb-8 md:w-1/2 md:mb-0 lg:w-1/2 lg:mb-0">
+            <div class="bg-grey w-3/4 mx-auto h-48 lg:h-64">
+                <img src="https://res.cloudinary.com/hackafro/image/upload/v1526809645/service-1_toepgr.jpg" alt="" style="max-width: 100%; max-height: 100%; width: 100%; height: 100%">
+            </div>
+            <div class="mx-auto text-center px-8 mt-6 lg:px-10 lg:w-3/4">
+                <hr class="line-separator border-b-2 border-wgbc">
+                <h2 class="opacity-75 capitalize tracking-wide leading-normal">
+                    Piling and Foundation Works
+                </h2>
+            </div>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/2">
+            <div class="w-full mx-auto lg:w-3/4">
+                <div class="text-center">
+                    <hr class="line-separator border-b-2 border-wgbc mb-4">
+                    <h3 class="text-wgbc uppercase font-semibold">Service Overview</h3>
+                </div>
+
+                <div class="flex justify-center px-6 py-4 lg:px-6">
+                    <ul class="service-list">
+                        <li>Stone Columns</li>
+                        <li>Bored Piles</li>
+                        <li>Driven Piles</li>
+                        <li>Steel cased Piles</li>
+                        <li>Pre-cast Concrete Piles</li>
+                        <li>General Soil Improvement</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock content %}
