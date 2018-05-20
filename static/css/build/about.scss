@@ -1,11 +1,24 @@
 .hero-section {
-  background: url('/static/imgs/bible-page.png');
+  background: linear-gradient(0deg, #4a4646, #4a4646),
+    url('https://res.cloudinary.com/hackafro/image/upload/v1526809635/architecture-rig_e9l7vj.jpg'), no-repeat;
+  height: 550px;
+  background-attachment: fixed;
+  background-blend-mode: multiply, normal;
+  background-size: cover;
   height: 400px;
 
   .down-button {
     left: 50%;
     bottom: -30px;
   }
+}
+
+.job-slides{
+  max-width:  100%;
+}
+
+.slick-initialized .slick-slide{
+  display: flex;
 }
 
 .line-separator {

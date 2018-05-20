@@ -1,6 +1,10 @@
 .hero-section {
-  background: url('/static/imgs/bible-page.png');
+  background: linear-gradient(0deg, #4a4646, #4a4646),
+    url('https://res.cloudinary.com/hackafro/image/upload/v1526809636/maritime3_k8jtgr.jpg'), no-repeat;
   height: 550px;
+  background-attachment: fixed;
+  background-blend-mode: multiply, normal;
+  background-size: cover;
   .slideshow-img {
     width: 500px;
     height: 310px;
@@ -45,7 +49,7 @@
 
 @media (min-width: 992px) {
   .fellowship-details {
-    top: -10%;
-    left: 22%;
+    top: -10% !important;
+    left: 22% !important;
   }
 }
