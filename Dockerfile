@@ -8,8 +8,7 @@ RUN mkdir /code
 WORKDIR /code
 COPY .  /code
 RUN pip3 install -r requirements.txt
-RUN npm install
-RUN npm run build:dev
-
-EXPOSE 8080
-CMD ["python3", "manage.py", "runserver", "0.0.0.0:8080" ]
+RUN yarn
+RUN yarn build:dev
+EXPOSE $PORT
+CMD python3 manage.py runserver 0.0.0.0:$PORT
