@@ -10,6 +10,21 @@ import jump from 'jump.js';
   const downButton = [...document.querySelectorAll('.js-down-button')];
   const tabs = [...document.querySelectorAll('.tab')];
   const tabDetails = [...document.querySelectorAll('.tab-body')];
+  const nav = document.querySelector('.dropdown-nav');
+  const menuButton = document.querySelector('.menu-button');
+
+  menuButton.addEventListener('click', toggleNav);
+
+  // Expandable menu displayed on mobile. Function to toggle visibility
+  function toggleNav() {
+    if (nav.classList.contains('hide')) {
+      nav.classList.remove('hide');
+      nav.classList.add('reveal');
+    } else {
+      nav.classList.remove('reveal');
+      nav.classList.add('hide');
+    }
+  }
 
   const smoothScroll = (e) => {
     const el = e.target;
