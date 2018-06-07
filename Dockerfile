@@ -1,5 +1,5 @@
 FROM mhart/alpine-node
-ARG PORT
+ARG PORT=5000
 RUN echo "ipv6" >> /etc/modules
 RUN echo "http://nl.alpinelinux.org/alpine/v3.7/community" >> /etc/apk/repositories
 

@@ -14,7 +14,8 @@
     "build:tailwind": "gulp tailwind",
     "build:css": "gulp build-css",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "now --public --docker"
+    "deploy:now": "now --public --docker",
+    "deploy:docker": "heroku container:push web && heroku container:release web"
   },
   "repository": {
     "type": "git",
