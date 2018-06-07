@@ -1,4 +1,6 @@
-{% extends 'layout.html' %} {% block links %}
+{% extends 'layout.html' %}{% block title %}
+<title>Contact | Harbour Technologies Limited</title>
+{% endblock title %} {% block links %}
 <link rel="stylesheet" href="/static/css/dist/contact.css"> {% endblock links %} {% block content %}
 <section class="contact-map">
     <div id="map"></div>
@@ -10,7 +12,9 @@
             <div class="contact-zone px-8">
                 <p class="text-sm opacity-75 mb-3">
                     <i class="fa fa-map-marker mr-3"></i> 2A Steve Ihedigbo Street Off Chivita Avenue. Ajao Estate.
-                    <br/><span class="ml-6">Isolo, Lagos State</span></p>
+                    <br/>
+                    <span class="ml-6">Isolo, Lagos State</span>
+                </p>
                 <hr/>
                 <p class="text-sm opacity-75 mb-3">
                     <i class="fa fa-envelope mr-3"></i> harbourmails@yahoo.com</p>
