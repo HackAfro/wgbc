@@ -3,4 +3,4 @@ solution.js
 yarn.lock
 .vscode
 .cache
-*.css
+/dist
